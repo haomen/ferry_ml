@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T16:11:37.342974-04:00",
+  "generated_at": "2026-05-05T16:12:03.875641-04:00",
   "period": "afternoon",
   "today_bias_sec": 0,
   "n_trips": 13,
@@ -10,8 +10,8 @@
       "mmsi": "367434220",
       "destination": "Hoboken 14 St",
       "eta": "04:17 PM",
-      "eta_iso": "2026-05-05T16:17:04.706115-04:00",
-      "eta_ts": 1778012225,
+      "eta_iso": "2026-05-05T16:17:31.238773-04:00",
+      "eta_ts": 1778012251,
       "conf_pm_min": 2.0,
       "remaining_min": 5.5,
       "dist_nm": 2.29,
@@ -23,12 +23,12 @@
       "mmsi": "366851680",
       "destination": "Hoboken 14 St",
       "eta": "04:19 PM",
-      "eta_iso": "2026-05-05T16:19:31.249812-04:00",
-      "eta_ts": 1778012371,
-      "conf_pm_min": 2.3,
-      "remaining_min": 7.9,
+      "eta_iso": "2026-05-05T16:19:32.381238-04:00",
+      "eta_ts": 1778012372,
+      "conf_pm_min": 2.2,
+      "remaining_min": 7.5,
       "dist_nm": 1.82,
-      "sog": 3.7,
+      "sog": 4.9,
       "delay_sec": 0
     },
     {
@@ -36,12 +36,12 @@
       "mmsi": "366853410",
       "destination": "Hoboken 14 St",
       "eta": "04:19 PM",
-      "eta_iso": "2026-05-05T16:19:31.296873-04:00",
-      "eta_ts": 1778012371,
+      "eta_iso": "2026-05-05T16:19:57.811405-04:00",
+      "eta_ts": 1778012398,
       "conf_pm_min": 2.3,
       "remaining_min": 7.9,
-      "dist_nm": 1.58,
-      "sog": 6.5,
+      "dist_nm": 1.6,
+      "sog": 5.4,
       "delay_sec": 0
     }
   ]
