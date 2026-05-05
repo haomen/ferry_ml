@@ -1,17 +1,30 @@
 {
-  "generated_at": "2026-05-05T08:27:37.523908-04:00",
+  "generated_at": "2026-05-05T08:28:04.014241-04:00",
   "period": "morning",
   "today_bias_sec": -37,
   "n_trips": 13,
   "trained_at": "2026-05-05T10:00:09.130869+00:00",
   "ferries": [
     {
+      "vessel": "GOV THOMAS H KEAN",
+      "mmsi": "366902350",
+      "destination": "NYC W39",
+      "eta": "08:30 AM",
+      "eta_iso": "2026-05-05T08:30:11.080848-04:00",
+      "eta_ts": 1777984211,
+      "conf_pm_min": 1.7,
+      "remaining_min": 2.1,
+      "dist_nm": 0.19,
+      "sog": 12.1,
+      "delay_sec": -37
+    },
+    {
       "vessel": "YOGI BERRA",
       "mmsi": "367434220",
       "destination": "NYC W39",
-      "eta": "08:29 AM",
-      "eta_iso": "2026-05-05T08:29:44.466991-04:00",
-      "eta_ts": 1777984184,
+      "eta": "08:30 AM",
+      "eta_iso": "2026-05-05T08:30:10.957268-04:00",
+      "eta_ts": 1777984211,
       "conf_pm_min": 1.0,
       "remaining_min": 2.1,
       "dist_nm": 0.01,
@@ -19,29 +32,16 @@
       "delay_sec": -37
     },
     {
-      "vessel": "GOV THOMAS H KEAN",
-      "mmsi": "366902350",
-      "destination": "NYC W39",
-      "eta": "08:29 AM",
-      "eta_iso": "2026-05-05T08:29:44.591690-04:00",
-      "eta_ts": 1777984185,
-      "conf_pm_min": 1.7,
-      "remaining_min": 2.1,
-      "dist_nm": 0.12,
-      "sog": 10.5,
-      "delay_sec": -37
-    },
-    {
       "vessel": "GARDEN STATE",
       "mmsi": "366629680",
       "destination": "NYC W39",
       "eta": "08:34 AM",
-      "eta_iso": "2026-05-05T08:34:30.319422-04:00",
-      "eta_ts": 1777984470,
+      "eta_iso": "2026-05-05T08:34:56.816151-04:00",
+      "eta_ts": 1777984497,
       "conf_pm_min": 1.9,
       "remaining_min": 6.9,
-      "dist_nm": 3.04,
-      "sog": 9.3,
+      "dist_nm": 3.03,
+      "sog": 7.6,
       "delay_sec": -37
     },
     {
@@ -49,12 +49,12 @@
       "mmsi": "366853410",
       "destination": "NYC W39",
       "eta": "08:34 AM",
-      "eta_iso": "2026-05-05T08:34:30.364614-04:00",
-      "eta_ts": 1777984470,
+      "eta_iso": "2026-05-05T08:34:56.859564-04:00",
+      "eta_ts": 1777984497,
       "conf_pm_min": 1.9,
       "remaining_min": 6.9,
-      "dist_nm": 3.37,
-      "sog": 9.3,
+      "dist_nm": 3.39,
+      "sog": 8.2,
       "delay_sec": -37
     }
   ]
