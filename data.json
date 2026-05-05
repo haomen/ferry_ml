@@ -1,34 +1,47 @@
 {
-  "generated_at": "2026-05-05T07:47:02.952204-04:00",
+  "generated_at": "2026-05-05T07:47:36.527077-04:00",
   "period": "morning",
   "today_bias_sec": -43,
   "n_trips": 13,
   "trained_at": "2026-05-05T10:00:09.130869+00:00",
   "ferries": [
     {
+      "vessel": "YOGI BERRA",
+      "mmsi": "367434220",
+      "destination": "NYC W39",
+      "eta": "07:49 AM",
+      "eta_iso": "2026-05-05T07:49:37.398421-04:00",
+      "eta_ts": 1777981777,
+      "conf_pm_min": 1.0,
+      "remaining_min": 2.0,
+      "dist_nm": 0.01,
+      "sog": 102.3,
+      "delay_sec": -43
+    },
+    {
       "vessel": "FRED V MORRONE",
       "mmsi": "366853410",
       "destination": "NYC W39",
-      "eta": "07:51 AM",
-      "eta_iso": "2026-05-05T07:51:36.553896-04:00",
-      "eta_ts": 1777981897,
+      "eta": "07:52 AM",
+      "eta_iso": "2026-05-05T07:52:10.086772-04:00",
+      "eta_ts": 1777981930,
       "conf_pm_min": 1.6,
       "remaining_min": 4.6,
-      "dist_nm": 3.75,
-      "sog": 25.0,
+      "dist_nm": 3.59,
+      "sog": 25.3,
       "delay_sec": -43
     },
     {
       "vessel": "GARDEN STATE",
       "mmsi": "366629680",
       "destination": "NYC W39",
-      "eta": "07:53 AM",
-      "eta_iso": "2026-05-05T07:53:49.765702-04:00",
-      "eta_ts": 1777982030,
+      "eta": "07:54 AM",
+      "eta_iso": "2026-05-05T07:54:23.292570-04:00",
+      "eta_ts": 1777982063,
       "conf_pm_min": 1.9,
       "remaining_min": 6.8,
-      "dist_nm": 2.51,
-      "sog": 1.9,
+      "dist_nm": 2.54,
+      "sog": 5.7,
       "delay_sec": -43
     }
   ]
