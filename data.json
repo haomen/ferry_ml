@@ -1,8 +1,48 @@
 {
-  "generated_at": "2026-05-05T16:00:03.503072-04:00",
+  "generated_at": "2026-05-05T16:00:37.543828-04:00",
   "period": "afternoon",
   "today_bias_sec": 0,
   "n_trips": 13,
   "trained_at": "2026-05-05T10:00:09.130869+00:00",
-  "ferries": []
+  "ferries": [
+    {
+      "vessel": "YOGI BERRA",
+      "mmsi": "367434220",
+      "destination": "Hoboken 14 St",
+      "eta": "04:06 PM",
+      "eta_iso": "2026-05-05T16:06:04.906983-04:00",
+      "eta_ts": 1778011565,
+      "conf_pm_min": 2.0,
+      "remaining_min": 5.5,
+      "dist_nm": 2.3,
+      "sog": 102.3,
+      "delay_sec": 0
+    },
+    {
+      "vessel": "GARDEN STATE",
+      "mmsi": "366629680",
+      "destination": "Hoboken 14 St",
+      "eta": "04:08 PM",
+      "eta_iso": "2026-05-05T16:08:16.182307-04:00",
+      "eta_ts": 1778011696,
+      "conf_pm_min": 2.3,
+      "remaining_min": 7.6,
+      "dist_nm": 2.58,
+      "sog": 0.1,
+      "delay_sec": 0
+    },
+    {
+      "vessel": "SEN FRANK LAUTENBERG",
+      "mmsi": "366851680",
+      "destination": "Hoboken 14 St",
+      "eta": "04:08 PM",
+      "eta_iso": "2026-05-05T16:08:31.470825-04:00",
+      "eta_ts": 1778011711,
+      "conf_pm_min": 2.3,
+      "remaining_min": 7.9,
+      "dist_nm": 1.87,
+      "sog": 7.2,
+      "delay_sec": 0
+    }
+  ]
 }
