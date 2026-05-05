@@ -1,48 +1,8 @@
 {
-  "generated_at": "2026-05-05T19:09:38.673134-04:00",
+  "generated_at": "2026-05-05T19:10:04.472037-04:00",
   "period": "afternoon",
   "today_bias_sec": -128,
   "n_trips": 13,
   "trained_at": "2026-05-05T10:00:09.130869+00:00",
-  "ferries": [
-    {
-      "vessel": "FRED V MORRONE",
-      "mmsi": "366853410",
-      "destination": "Hoboken 14 St",
-      "eta": "07:12 PM",
-      "eta_iso": "2026-05-05T19:12:33.367074-04:00",
-      "eta_ts": 1778022753,
-      "conf_pm_min": 0.7,
-      "remaining_min": 2.9,
-      "dist_nm": 0.79,
-      "sog": 15.7,
-      "delay_sec": -128
-    },
-    {
-      "vessel": "GARDEN STATE",
-      "mmsi": "366629680",
-      "destination": "Hoboken 14 St",
-      "eta": "07:15 PM",
-      "eta_iso": "2026-05-05T19:15:46.874423-04:00",
-      "eta_ts": 1778022947,
-      "conf_pm_min": 2.1,
-      "remaining_min": 6.1,
-      "dist_nm": 2.59,
-      "sog": 0.1,
-      "delay_sec": -128
-    },
-    {
-      "vessel": "YOGI BERRA",
-      "mmsi": "367434220",
-      "destination": "Hoboken 14 St",
-      "eta": "07:15 PM",
-      "eta_iso": "2026-05-05T19:15:47.023503-04:00",
-      "eta_ts": 1778022947,
-      "conf_pm_min": 1.7,
-      "remaining_min": 6.1,
-      "dist_nm": 1.4,
-      "sog": 7.2,
-      "delay_sec": -128
-    }
-  ]
+  "ferries": []
 }
