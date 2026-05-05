@@ -1,0 +1,8 @@
+{
+  "generated_at": "2026-05-05T00:22:56.684571-04:00",
+  "period": "off-hours",
+  "today_bias_sec": 0,
+  "n_trips": 13,
+  "trained_at": "2026-05-05T04:18:00.417185+00:00",
+  "ferries": []
+}
