@@ -1,34 +1,21 @@
 {
-  "generated_at": "2026-05-05T16:51:03.628657-04:00",
+  "generated_at": "2026-05-05T16:51:37.233851-04:00",
   "period": "afternoon",
   "today_bias_sec": -112,
   "n_trips": 13,
   "trained_at": "2026-05-05T10:00:09.130869+00:00",
   "ferries": [
     {
-      "vessel": "YOGI BERRA",
-      "mmsi": "367434220",
-      "destination": "Hoboken 14 St",
-      "eta": "04:57 PM",
-      "eta_iso": "2026-05-05T16:57:04.425851-04:00",
-      "eta_ts": 1778014624,
-      "conf_pm_min": 2.3,
-      "remaining_min": 6.0,
-      "dist_nm": 2.3,
-      "sog": 2.3,
-      "delay_sec": -112
-    },
-    {
       "vessel": "GARDEN STATE",
       "mmsi": "366629680",
       "destination": "Hoboken 14 St",
       "eta": "04:57 PM",
-      "eta_iso": "2026-05-05T16:57:05.476552-04:00",
-      "eta_ts": 1778014625,
+      "eta_iso": "2026-05-05T16:57:39.100171-04:00",
+      "eta_ts": 1778014659,
       "conf_pm_min": 2.3,
       "remaining_min": 6.0,
-      "dist_nm": 1.85,
-      "sog": 3.2,
+      "dist_nm": 1.86,
+      "sog": 3.1,
       "delay_sec": -112
     },
     {
@@ -36,12 +23,12 @@
       "mmsi": "366851680",
       "destination": "Hoboken 14 St",
       "eta": "04:57 PM",
-      "eta_iso": "2026-05-05T16:57:05.525741-04:00",
-      "eta_ts": 1778014626,
+      "eta_iso": "2026-05-05T16:57:39.148631-04:00",
+      "eta_ts": 1778014659,
       "conf_pm_min": 2.3,
       "remaining_min": 6.0,
-      "dist_nm": 1.82,
-      "sog": 11.7,
+      "dist_nm": 1.76,
+      "sog": 12.9,
       "delay_sec": -112
     },
     {
@@ -49,12 +36,25 @@
       "mmsi": "366853410",
       "destination": "Hoboken 14 St",
       "eta": "04:57 PM",
-      "eta_iso": "2026-05-05T16:57:05.621459-04:00",
-      "eta_ts": 1778014626,
+      "eta_iso": "2026-05-05T16:57:39.243474-04:00",
+      "eta_ts": 1778014659,
       "conf_pm_min": 1.9,
       "remaining_min": 6.0,
       "dist_nm": 1.31,
       "sog": 0.1,
+      "delay_sec": -112
+    },
+    {
+      "vessel": "YOGI BERRA",
+      "mmsi": "367434220",
+      "destination": "Hoboken 14 St",
+      "eta": "04:57 PM",
+      "eta_iso": "2026-05-05T16:57:39.242722-04:00",
+      "eta_ts": 1778014659,
+      "conf_pm_min": 2.3,
+      "remaining_min": 6.0,
+      "dist_nm": 2.29,
+      "sog": 0.0,
       "delay_sec": -112
     }
   ]
