@@ -8,9 +8,9 @@ Commands:
     python3 eta_hoboken_nyc.py live     # real-time terminal display
 
 Cron (weekdays):
-    0 6         * * 1-5  python3 /home/hao/Desktop/ais/eta_hoboken_nyc.py train   >> /home/hao/Desktop/ais/eta.log 2>&1
-    */2 7-10    * * 1-5  python3 /home/hao/Desktop/ais/eta_hoboken_nyc.py publish >> /home/hao/Desktop/ais/eta.log 2>&1
-    */2 16-19   * * 1-5  python3 /home/hao/Desktop/ais/eta_hoboken_nyc.py publish >> /home/hao/Desktop/ais/eta.log 2>&1
+    0 6     * * 1-5  python3 /home/hao/Desktop/ais/eta_hoboken_nyc.py train >> /home/hao/Desktop/ais/eta.log 2>&1
+    * 7-10  * * 1-5  /bin/bash -c 'P=/home/hao/Desktop/ais; python3 $P/eta_hoboken_nyc.py publish >> $P/eta.log 2>&1; sleep 30; python3 $P/eta_hoboken_nyc.py publish >> $P/eta.log 2>&1'
+    * 16-19 * * 1-5  /bin/bash -c 'P=/home/hao/Desktop/ais; python3 $P/eta_hoboken_nyc.py publish >> $P/eta.log 2>&1; sleep 30; python3 $P/eta_hoboken_nyc.py publish >> $P/eta.log 2>&1'
 """
 
 import json
@@ -20,7 +20,7 @@ import pickle
 import subprocess
 import sys
 import time
-from datetime import datetime, timezone, timedelta
+from datetime import date, datetime, timezone, timedelta
 from pathlib import Path
 from typing import Optional
 
@@ -82,10 +82,41 @@ def _conn():
     return psycopg2.connect(DB_DSN)
 
 
-def load_positions(today_only: bool = False) -> pd.DataFrame:
-    """Load route-vessel positions from PostgreSQL."""
+def _last_n_weekdays(n: int) -> list[date]:
+    """Return the n most-recent weekday dates before today."""
+    result, d = [], date.today() - timedelta(days=1)
+    while len(result) < n:
+        if d.weekday() < 5:   # Mon=0 … Fri=4
+            result.append(d)
+        d -= timedelta(days=1)
+    return result
+
+
+def load_positions(today_only: bool = False,
+                   training_weekdays: int = 0) -> pd.DataFrame:
+    """
+    Load route-vessel positions from PostgreSQL.
+    today_only=True  → last 16 hours (for online bias computation)
+    training_weekdays=N → restrict to the last N weekday dates (for training)
+    """
     mmsi_list = list(ROUTE_MMSI.keys())
-    time_filter = "AND p.ts >= NOW() - INTERVAL '16 hours'" if today_only else ""
+
+    if today_only:
+        time_filter = "AND p.ts >= NOW() - INTERVAL '16 hours'"
+        params: dict = {"mmsi": mmsi_list}
+    elif training_weekdays > 0:
+        days    = _last_n_weekdays(training_weekdays)
+        day_min = datetime.combine(min(days), datetime.min.time()) \
+                          .replace(tzinfo=timezone.utc)
+        day_max = datetime.combine(max(days) + timedelta(days=1),
+                                   datetime.min.time()) \
+                          .replace(tzinfo=timezone.utc)
+        time_filter = "AND p.ts >= %(day_min)s AND p.ts < %(day_max)s"
+        params = {"mmsi": mmsi_list, "day_min": day_min, "day_max": day_max}
+    else:
+        time_filter = ""
+        params = {"mmsi": mmsi_list}
+
     with _conn() as conn:
         df = pd.read_sql(f"""
             SELECT p.mmsi,
@@ -98,7 +129,7 @@ def load_positions(today_only: bool = False) -> pd.DataFrame:
               AND p.lat  IS NOT NULL
               {time_filter}
             ORDER BY p.mmsi, p.ts
-        """, conn, params={"mmsi": mmsi_list})
+        """, conn, params=params)
     return df
 
 
@@ -265,8 +296,9 @@ def train():
     from sklearn.ensemble import HistGradientBoostingRegressor
     from sklearn.model_selection import cross_val_score
 
-    log.info("Loading all historical positions...")
-    pos_df = load_positions(today_only=False)
+    days = _last_n_weekdays(3)
+    log.info("Training on last 3 weekdays: %s", [str(d) for d in sorted(days)])
+    pos_df = load_positions(training_weekdays=3)
     log.info("  %d positions, %d vessels", len(pos_df), pos_df["mmsi"].nunique())
 
     log.info("Detecting trips...")

@@ -109,7 +109,7 @@
 
 <div id="delay-banner"></div>
 <div id="ferry-list"><div id="empty-state">Loading ferry data…</div></div>
-<footer id="footer">Powered by real-time AIS · Data refreshes every 60 s</footer>
+<footer id="footer">Powered by real-time AIS · Data refreshes every 30 s</footer>
 
 <script>
 const DATA_URL = './data.json';
@@ -226,7 +226,7 @@ async function fetchAndRender() {
 }
 
 fetchAndRender();
-setInterval(fetchAndRender, 60_000);
+setInterval(fetchAndRender, 30_000);
 </script>
 </body>
 </html>
