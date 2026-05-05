@@ -1,30 +1,17 @@
 {
-  "generated_at": "2026-05-05T16:05:37.899069-04:00",
+  "generated_at": "2026-05-05T16:06:03.384826-04:00",
   "period": "afternoon",
   "today_bias_sec": 0,
   "n_trips": 13,
   "trained_at": "2026-05-05T10:00:09.130869+00:00",
   "ferries": [
     {
-      "vessel": "FRED V MORRONE",
-      "mmsi": "366853410",
-      "destination": "Hoboken 14 St",
-      "eta": "04:10 PM",
-      "eta_iso": "2026-05-05T16:10:56.094712-04:00",
-      "eta_ts": 1778011856,
-      "conf_pm_min": 1.5,
-      "remaining_min": 5.3,
-      "dist_nm": 1.38,
-      "sog": 24.6,
-      "delay_sec": 0
-    },
-    {
       "vessel": "YOGI BERRA",
       "mmsi": "367434220",
       "destination": "Hoboken 14 St",
       "eta": "04:11 PM",
-      "eta_iso": "2026-05-05T16:11:05.262151-04:00",
-      "eta_ts": 1778011865,
+      "eta_iso": "2026-05-05T16:11:30.747898-04:00",
+      "eta_ts": 1778011891,
       "conf_pm_min": 2.0,
       "remaining_min": 5.5,
       "dist_nm": 2.29,
@@ -32,16 +19,29 @@
       "delay_sec": 0
     },
     {
+      "vessel": "FRED V MORRONE",
+      "mmsi": "366853410",
+      "destination": "Hoboken 14 St",
+      "eta": "04:13 PM",
+      "eta_iso": "2026-05-05T16:13:26.944224-04:00",
+      "eta_ts": 1778012007,
+      "conf_pm_min": 1.0,
+      "remaining_min": 7.4,
+      "dist_nm": 1.27,
+      "sog": 14.6,
+      "delay_sec": 0
+    },
+    {
       "vessel": "GARDEN STATE",
       "mmsi": "366629680",
       "destination": "Hoboken 14 St",
       "eta": "04:13 PM",
-      "eta_iso": "2026-05-05T16:13:16.424762-04:00",
-      "eta_ts": 1778011996,
+      "eta_iso": "2026-05-05T16:13:42.000987-04:00",
+      "eta_ts": 1778012022,
       "conf_pm_min": 2.3,
       "remaining_min": 7.6,
-      "dist_nm": 2.23,
-      "sog": 11.2,
+      "dist_nm": 2.14,
+      "sog": 11.4,
       "delay_sec": 0
     },
     {
@@ -49,12 +49,12 @@
       "mmsi": "366902350",
       "destination": "Hoboken 14 St",
       "eta": "04:13 PM",
-      "eta_iso": "2026-05-05T16:13:31.762846-04:00",
-      "eta_ts": 1778012012,
+      "eta_iso": "2026-05-05T16:13:52.604219-04:00",
+      "eta_ts": 1778012033,
       "conf_pm_min": 2.3,
-      "remaining_min": 7.9,
-      "dist_nm": 2.49,
-      "sog": 11.8,
+      "remaining_min": 7.8,
+      "dist_nm": 2.41,
+      "sog": 11.7,
       "delay_sec": 0
     }
   ]
