@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T08:55:37.932464-04:00",
+  "generated_at": "2026-05-05T08:56:03.547442-04:00",
   "period": "morning",
   "today_bias_sec": -37,
   "n_trips": 13,
@@ -10,12 +10,12 @@
       "mmsi": "366902350",
       "destination": "NYC W39",
       "eta": "08:59 AM",
-      "eta_iso": "2026-05-05T08:59:36.859674-04:00",
-      "eta_ts": 1777985977,
-      "conf_pm_min": 0.7,
-      "remaining_min": 4.0,
-      "dist_nm": 0.99,
-      "sog": 26.1,
+      "eta_iso": "2026-05-05T08:59:21.703187-04:00",
+      "eta_ts": 1777985962,
+      "conf_pm_min": 0.6,
+      "remaining_min": 3.3,
+      "dist_nm": 0.85,
+      "sog": 26.0,
       "delay_sec": -37
     },
     {
@@ -23,12 +23,12 @@
       "mmsi": "366629680",
       "destination": "NYC W39",
       "eta": "09:02 AM",
-      "eta_iso": "2026-05-05T09:02:30.720175-04:00",
-      "eta_ts": 1777986151,
+      "eta_iso": "2026-05-05T09:02:56.216607-04:00",
+      "eta_ts": 1777986176,
       "conf_pm_min": 1.9,
       "remaining_min": 6.9,
-      "dist_nm": 2.98,
-      "sog": 1.9,
+      "dist_nm": 3.0,
+      "sog": 3.5,
       "delay_sec": -37
     },
     {
@@ -36,12 +36,12 @@
       "mmsi": "366851680",
       "destination": "NYC W39",
       "eta": "09:02 AM",
-      "eta_iso": "2026-05-05T09:02:30.764404-04:00",
-      "eta_ts": 1777986151,
+      "eta_iso": "2026-05-05T09:02:56.278906-04:00",
+      "eta_ts": 1777986176,
       "conf_pm_min": 1.9,
       "remaining_min": 6.9,
-      "dist_nm": 2.49,
-      "sog": 13.7,
+      "dist_nm": 2.59,
+      "sog": 11.8,
       "delay_sec": -37
     },
     {
@@ -49,12 +49,25 @@
       "mmsi": "366853410",
       "destination": "NYC W39",
       "eta": "09:02 AM",
-      "eta_iso": "2026-05-05T09:02:30.825999-04:00",
-      "eta_ts": 1777986151,
+      "eta_iso": "2026-05-05T09:02:56.330462-04:00",
+      "eta_ts": 1777986176,
       "conf_pm_min": 1.9,
       "remaining_min": 6.9,
       "dist_nm": 3.08,
-      "sog": 1.1,
+      "sog": 0.0,
+      "delay_sec": -37
+    },
+    {
+      "vessel": "YOGI BERRA",
+      "mmsi": "367434220",
+      "destination": "NYC W39",
+      "eta": "09:02 AM",
+      "eta_iso": "2026-05-05T09:02:56.482262-04:00",
+      "eta_ts": 1777986176,
+      "conf_pm_min": 1.9,
+      "remaining_min": 6.9,
+      "dist_nm": 1.82,
+      "sog": 4.3,
       "delay_sec": -37
     }
   ]
