@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T07:50:37.052185-04:00",
+  "generated_at": "2026-05-05T07:51:03.394032-04:00",
   "period": "morning",
   "today_bias_sec": -43,
   "n_trips": 13,
@@ -9,13 +9,13 @@
       "vessel": "YOGI BERRA",
       "mmsi": "367434220",
       "destination": "NYC W39",
-      "eta": "07:52 AM",
-      "eta_iso": "2026-05-05T07:52:37.923498-04:00",
-      "eta_ts": 1777981958,
-      "conf_pm_min": 1.0,
+      "eta": "07:53 AM",
+      "eta_iso": "2026-05-05T07:53:04.434546-04:00",
+      "eta_ts": 1777981984,
+      "conf_pm_min": 1.7,
       "remaining_min": 2.0,
-      "dist_nm": 0.01,
-      "sog": 102.3,
+      "dist_nm": 0.03,
+      "sog": 4.0,
       "delay_sec": -43
     },
     {
@@ -23,12 +23,12 @@
       "mmsi": "366902350",
       "destination": "NYC W39",
       "eta": "07:53 AM",
-      "eta_iso": "2026-05-05T07:53:28.030583-04:00",
-      "eta_ts": 1777982008,
-      "conf_pm_min": 1.4,
+      "eta_iso": "2026-05-05T07:53:58.276234-04:00",
+      "eta_ts": 1777982038,
+      "conf_pm_min": 1.9,
       "remaining_min": 2.9,
-      "dist_nm": 0.52,
-      "sog": 9.1,
+      "dist_nm": 0.58,
+      "sog": 9.5,
       "delay_sec": -43
     },
     {
@@ -36,12 +36,12 @@
       "mmsi": "366629680",
       "destination": "NYC W39",
       "eta": "07:57 AM",
-      "eta_iso": "2026-05-05T07:57:23.772337-04:00",
-      "eta_ts": 1777982244,
+      "eta_iso": "2026-05-05T07:57:50.070091-04:00",
+      "eta_ts": 1777982270,
       "conf_pm_min": 1.9,
       "remaining_min": 6.8,
-      "dist_nm": 2.94,
-      "sog": 7.1,
+      "dist_nm": 2.96,
+      "sog": 6.4,
       "delay_sec": -43
     },
     {
@@ -49,12 +49,12 @@
       "mmsi": "366853410",
       "destination": "NYC W39",
       "eta": "07:57 AM",
-      "eta_iso": "2026-05-05T07:57:23.819373-04:00",
-      "eta_ts": 1777982244,
+      "eta_iso": "2026-05-05T07:57:50.120394-04:00",
+      "eta_ts": 1777982270,
       "conf_pm_min": 1.9,
       "remaining_min": 6.8,
       "dist_nm": 3.08,
-      "sog": 1.3,
+      "sog": 0.0,
       "delay_sec": -43
     }
   ]
