@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T16:12:37.423148-04:00",
+  "generated_at": "2026-05-05T16:13:04.051139-04:00",
   "period": "afternoon",
   "today_bias_sec": 0,
   "n_trips": 13,
@@ -10,8 +10,8 @@
       "mmsi": "367434220",
       "destination": "Hoboken 14 St",
       "eta": "04:18 PM",
-      "eta_iso": "2026-05-05T16:18:04.786264-04:00",
-      "eta_ts": 1778012285,
+      "eta_iso": "2026-05-05T16:18:31.414309-04:00",
+      "eta_ts": 1778012311,
       "conf_pm_min": 2.0,
       "remaining_min": 5.5,
       "dist_nm": 2.29,
@@ -19,29 +19,29 @@
       "delay_sec": 0
     },
     {
-      "vessel": "SEN FRANK LAUTENBERG",
-      "mmsi": "366851680",
-      "destination": "Hoboken 14 St",
-      "eta": "04:20 PM",
-      "eta_iso": "2026-05-05T16:20:24.142719-04:00",
-      "eta_ts": 1778012424,
-      "conf_pm_min": 1.5,
-      "remaining_min": 7.8,
-      "dist_nm": 1.77,
-      "sog": 15.2,
-      "delay_sec": 0
-    },
-    {
       "vessel": "GARDEN STATE",
       "mmsi": "366629680",
       "destination": "Hoboken 14 St",
       "eta": "04:20 PM",
-      "eta_iso": "2026-05-05T16:20:31.252442-04:00",
-      "eta_ts": 1778012431,
+      "eta_iso": "2026-05-05T16:20:57.919296-04:00",
+      "eta_ts": 1778012458,
       "conf_pm_min": 2.3,
       "remaining_min": 7.9,
-      "dist_nm": 1.86,
-      "sog": 10.5,
+      "dist_nm": 1.88,
+      "sog": 10.7,
+      "delay_sec": 0
+    },
+    {
+      "vessel": "SEN FRANK LAUTENBERG",
+      "mmsi": "366851680",
+      "destination": "Hoboken 14 St",
+      "eta": "04:20 PM",
+      "eta_iso": "2026-05-05T16:20:57.960984-04:00",
+      "eta_ts": 1778012458,
+      "conf_pm_min": 2.3,
+      "remaining_min": 7.9,
+      "dist_nm": 1.75,
+      "sog": 14.2,
       "delay_sec": 0
     },
     {
@@ -49,12 +49,12 @@
       "mmsi": "366853410",
       "destination": "Hoboken 14 St",
       "eta": "04:20 PM",
-      "eta_iso": "2026-05-05T16:20:31.346453-04:00",
-      "eta_ts": 1778012431,
+      "eta_iso": "2026-05-05T16:20:58.006250-04:00",
+      "eta_ts": 1778012458,
       "conf_pm_min": 2.3,
       "remaining_min": 7.9,
-      "dist_nm": 1.61,
-      "sog": 5.2,
+      "dist_nm": 1.62,
+      "sog": 5.3,
       "delay_sec": 0
     }
   ]
