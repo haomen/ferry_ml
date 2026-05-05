@@ -1,30 +1,17 @@
 {
-  "generated_at": "2026-05-05T09:06:36.675853-04:00",
+  "generated_at": "2026-05-05T09:07:04.081813-04:00",
   "period": "morning",
   "today_bias_sec": -36,
   "n_trips": 13,
   "trained_at": "2026-05-05T10:00:09.130869+00:00",
   "ferries": [
     {
-      "vessel": "GOV THOMAS H KEAN",
-      "mmsi": "366902350",
-      "destination": "NYC W39",
-      "eta": "09:08 AM",
-      "eta_iso": "2026-05-05T09:08:45.152049-04:00",
-      "eta_ts": 1777986525,
-      "conf_pm_min": 1.7,
-      "remaining_min": 2.1,
-      "dist_nm": 0.04,
-      "sog": 3.3,
-      "delay_sec": -36
-    },
-    {
       "vessel": "YOGI BERRA",
       "mmsi": "367434220",
       "destination": "NYC W39",
-      "eta": "09:08 AM",
-      "eta_iso": "2026-05-05T09:08:44.935873-04:00",
-      "eta_ts": 1777986525,
+      "eta": "09:09 AM",
+      "eta_iso": "2026-05-05T09:09:12.341850-04:00",
+      "eta_ts": 1777986552,
       "conf_pm_min": 1.0,
       "remaining_min": 2.1,
       "dist_nm": 0.01,
@@ -32,16 +19,29 @@
       "delay_sec": -36
     },
     {
+      "vessel": "GOV THOMAS H KEAN",
+      "mmsi": "366902350",
+      "destination": "NYC W39",
+      "eta": "09:09 AM",
+      "eta_iso": "2026-05-05T09:09:12.565235-04:00",
+      "eta_ts": 1777986553,
+      "conf_pm_min": 1.7,
+      "remaining_min": 2.1,
+      "dist_nm": 0.06,
+      "sog": 4.1,
+      "delay_sec": -36
+    },
+    {
       "vessel": "GARDEN STATE",
       "mmsi": "366629680",
       "destination": "NYC W39",
       "eta": "09:13 AM",
-      "eta_iso": "2026-05-05T09:13:17.085431-04:00",
-      "eta_ts": 1777986797,
+      "eta_iso": "2026-05-05T09:13:44.496505-04:00",
+      "eta_ts": 1777986824,
       "conf_pm_min": 1.9,
       "remaining_min": 6.7,
-      "dist_nm": 1.69,
-      "sog": 13.4,
+      "dist_nm": 1.61,
+      "sog": 13.6,
       "delay_sec": -36
     },
     {
@@ -49,12 +49,12 @@
       "mmsi": "366851680",
       "destination": "NYC W39",
       "eta": "09:13 AM",
-      "eta_iso": "2026-05-05T09:13:30.881356-04:00",
-      "eta_ts": 1777986811,
+      "eta_iso": "2026-05-05T09:13:58.295506-04:00",
+      "eta_ts": 1777986838,
       "conf_pm_min": 1.9,
       "remaining_min": 6.9,
-      "dist_nm": 1.82,
-      "sog": 12.8,
+      "dist_nm": 1.83,
+      "sog": 8.5,
       "delay_sec": -36
     },
     {
@@ -62,12 +62,12 @@
       "mmsi": "366853410",
       "destination": "NYC W39",
       "eta": "09:13 AM",
-      "eta_iso": "2026-05-05T09:13:30.931786-04:00",
-      "eta_ts": 1777986811,
+      "eta_iso": "2026-05-05T09:13:58.339170-04:00",
+      "eta_ts": 1777986838,
       "conf_pm_min": 1.9,
       "remaining_min": 6.9,
-      "dist_nm": 3.03,
-      "sog": 5.1,
+      "dist_nm": 3.07,
+      "sog": 4.9,
       "delay_sec": -36
     }
   ]
