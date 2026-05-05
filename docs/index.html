@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>NYWaterway Ferry Tracker — Hoboken 14 St ↔ NYC W39</title>
+  <style>
+    :root {
+      --bg:     #0f1117;
+      --card:   #1a1d2e;
+      --border: #2d3050;
+      --text:   #e8eaf6;
+      --muted:  #7986cb;
+      --green:  #4caf50;
+      --yellow: #ffca28;
+      --red:    #ef5350;
+      --blue:   #42a5f5;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, sans-serif;
+      min-height: 100vh;
+    }
+    header {
+      padding: 1.2rem 1.5rem 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+    h1 { font-size: 1.05rem; font-weight: 700; letter-spacing: .02em; }
+    #subtitle { color: var(--muted); font-size: 0.82rem; margin-top: .3rem; }
+
+    #delay-banner {
+      display: none;
+      padding: .65rem 1.5rem;
+      font-size: .88rem;
+      font-weight: 600;
+    }
+
+    #ferry-list {
+      padding: 1rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: .75rem;
+      max-width: 640px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem 1.2rem;
+    }
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .vessel { font-size: 1rem; font-weight: 700; }
+    .dest   { font-size: .78rem; color: var(--muted); margin-top: .2rem; }
+    .eta-block { text-align: right; }
+    .eta-time  { font-size: 1.5rem; font-weight: 800; color: var(--blue); line-height: 1; }
+    .eta-conf  { font-size: .75rem; color: var(--muted); margin-top: .15rem; }
+    .countdown {
+      font-size: .9rem;
+      font-weight: 600;
+      margin-top: .6rem;
+      color: var(--green);
+    }
+    .countdown.soon   { color: var(--yellow); }
+    .countdown.now    { color: var(--red); }
+    .card-foot {
+      display: flex;
+      gap: .9rem;
+      margin-top: .65rem;
+      font-size: .78rem;
+      color: var(--muted);
+      flex-wrap: wrap;
+    }
+    .on-time  { color: var(--green); }
+    .late     { color: var(--red); }
+    .early    { color: var(--green); }
+
+    #empty-state {
+      padding: 3rem 1.5rem;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    footer {
+      padding: 1rem 1.5rem;
+      font-size: .73rem;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      margin-top: .5rem;
+    }
+
+    @media (max-width: 480px) {
+      header, #ferry-list, footer { padding-left: 1rem; padding-right: 1rem; }
+      .eta-time { font-size: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>NYWaterway Ferry Tracker</h1>
+  <div id="subtitle">Hoboken 14 St ↔ NYC W39 · Loading…</div>
+</header>
+
+<div id="delay-banner"></div>
+<div id="ferry-list"><div id="empty-state">Loading ferry data…</div></div>
+<footer id="footer">Powered by real-time AIS · Data refreshes every 60 s</footer>
+
+<script>
+const DATA_URL = './data.json';
+let timers = [];
+
+function stopTimers() {
+  timers.forEach(clearInterval);
+  timers = [];
+}
+
+function startCountdown(id, etaIso) {
+  const el  = document.getElementById(id);
+  if (!el) return;
+  const eta = new Date(etaIso).getTime();
+
+  const tick = () => {
+    const rem = Math.round((eta - Date.now()) / 1000);
+    if (rem <= 0) {
+      el.textContent  = 'Arriving now';
+      el.className    = 'countdown now';
+    } else {
+      const m = Math.floor(rem / 60);
+      const s = rem % 60;
+      el.textContent = `${m}:${String(s).padStart(2,'0')} remaining`;
+      el.className   = 'countdown' + (rem < 120 ? ' soon' : '');
+    }
+  };
+  tick();
+  timers.push(setInterval(tick, 1000));
+}
+
+function delayLabel(delay_sec) {
+  const m = Math.round(Math.abs(delay_sec) / 60);
+  if (delay_sec > 90)  return `<span class="late">+${m} min late</span>`;
+  if (delay_sec < -90) return `<span class="early">${m} min early</span>`;
+  return `<span class="on-time">On time</span>`;
+}
+
+function render(data) {
+  stopTimers();
+
+  const period = data.period === 'morning'   ? 'Morning — Hoboken → NYC'
+               : data.period === 'afternoon' ? 'Afternoon — NYC → Hoboken'
+               :                               'Off-hours';
+
+  const updated = new Date(data.generated_at).toLocaleTimeString([], {
+    hour: '2-digit', minute: '2-digit',
+  });
+  document.getElementById('subtitle').textContent =
+    `${period} · Updated ${updated}`;
+
+  // Delay banner
+  const banner   = document.getElementById('delay-banner');
+  const biasMin  = (data.today_bias_sec || 0) / 60;
+  if (Math.abs(biasMin) >= 2) {
+    banner.style.display = 'block';
+    if (biasMin > 0) {
+      banner.style.background = biasMin > 4 ? 'var(--red)' : 'var(--yellow)';
+      banner.style.color      = biasMin > 4 ? '#fff' : '#000';
+      banner.textContent      = `⚠ Ferries running ~${Math.round(biasMin)} min late today`;
+    } else {
+      banner.style.background = 'var(--green)';
+      banner.style.color      = '#000';
+      banner.textContent      = `✓ Ferries running ~${Math.round(-biasMin)} min ahead of schedule`;
+    }
+  } else {
+    banner.style.display = 'none';
+  }
+
+  // Ferry cards
+  const list = document.getElementById('ferry-list');
+  if (!data.ferries || data.ferries.length === 0) {
+    list.innerHTML = '<div id="empty-state">No active ferries at the moment.</div>';
+    return;
+  }
+
+  list.innerHTML = data.ferries.map((f, i) => `
+    <div class="card">
+      <div class="card-top">
+        <div>
+          <div class="vessel">${f.vessel}</div>
+          <div class="dest">→ ${f.destination}</div>
+        </div>
+        <div class="eta-block">
+          <div class="eta-time">${f.eta}</div>
+          <div class="eta-conf">±${f.conf_pm_min} min</div>
+        </div>
+      </div>
+      <div class="countdown" id="cd-${i}"></div>
+      <div class="card-foot">
+        <span>⚡ ${f.sog} kt</span>
+        <span>📍 ${f.dist_nm} nm out</span>
+        ${delayLabel(f.delay_sec)}
+      </div>
+    </div>
+  `).join('');
+
+  data.ferries.forEach((f, i) => startCountdown(`cd-${i}`, f.eta_iso));
+
+  document.getElementById('footer').textContent =
+    `Model trained on ${data.n_trips || '?'} historical crossings · ` +
+    `Data refreshes every 60 s · Last push ${updated}`;
+}
+
+async function fetchAndRender() {
+  try {
+    const res  = await fetch(`${DATA_URL}?t=${Date.now()}`);
+    if (!res.ok) throw new Error(res.status);
+    render(await res.json());
+  } catch (e) {
+    document.getElementById('subtitle').textContent =
+      'Unable to load data — retrying in 60 s';
+  }
+}
+
+fetchAndRender();
+setInterval(fetchAndRender, 60_000);
+</script>
+</body>
+</html>
