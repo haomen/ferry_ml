@@ -1,61 +1,48 @@
 {
-  "generated_at": "2026-05-05T08:25:03.307698-04:00",
+  "generated_at": "2026-05-05T08:25:36.766422-04:00",
   "period": "morning",
-  "today_bias_sec": -43,
+  "today_bias_sec": -37,
   "n_trips": 13,
   "trained_at": "2026-05-05T10:00:09.130869+00:00",
   "ferries": [
     {
-      "vessel": "YOGI BERRA",
-      "mmsi": "367434220",
-      "destination": "NYC W39",
-      "eta": "08:26 AM",
-      "eta_iso": "2026-05-05T08:26:51.926860-04:00",
-      "eta_ts": 1777984012,
-      "conf_pm_min": 1.7,
-      "remaining_min": 1.8,
-      "dist_nm": 0.05,
-      "sog": 6.6,
-      "delay_sec": -43
-    },
-    {
       "vessel": "SEN FRANK LAUTENBERG",
       "mmsi": "366851680",
       "destination": "NYC W39",
-      "eta": "08:29 AM",
-      "eta_iso": "2026-05-05T08:29:21.847482-04:00",
-      "eta_ts": 1777984162,
-      "conf_pm_min": 1.5,
-      "remaining_min": 4.3,
-      "dist_nm": 2.05,
-      "sog": 23.9,
-      "delay_sec": -43
-    },
-    {
-      "vessel": "GARDEN STATE",
-      "mmsi": "366629680",
-      "destination": "NYC W39",
       "eta": "08:31 AM",
-      "eta_iso": "2026-05-05T08:31:50.029695-04:00",
-      "eta_ts": 1777984310,
-      "conf_pm_min": 1.9,
-      "remaining_min": 6.8,
-      "dist_nm": 3.04,
-      "sog": 6.8,
-      "delay_sec": -43
+      "eta_iso": "2026-05-05T08:31:31.318599-04:00",
+      "eta_ts": 1777984291,
+      "conf_pm_min": 1.0,
+      "remaining_min": 5.9,
+      "dist_nm": 1.9,
+      "sog": 17.0,
+      "delay_sec": -37
     },
     {
       "vessel": "FRED V MORRONE",
       "mmsi": "366853410",
       "destination": "NYC W39",
-      "eta": "08:31 AM",
-      "eta_iso": "2026-05-05T08:31:50.124571-04:00",
-      "eta_ts": 1777984310,
+      "eta": "08:32 AM",
+      "eta_iso": "2026-05-05T08:32:11.937869-04:00",
+      "eta_ts": 1777984332,
       "conf_pm_min": 1.9,
-      "remaining_min": 6.8,
+      "remaining_min": 6.6,
       "dist_nm": 3.08,
-      "sog": 0.1,
-      "delay_sec": -43
+      "sog": 4.2,
+      "delay_sec": -37
+    },
+    {
+      "vessel": "GARDEN STATE",
+      "mmsi": "366629680",
+      "destination": "NYC W39",
+      "eta": "08:32 AM",
+      "eta_iso": "2026-05-05T08:32:29.571804-04:00",
+      "eta_ts": 1777984350,
+      "conf_pm_min": 1.9,
+      "remaining_min": 6.9,
+      "dist_nm": 3.07,
+      "sog": 1.0,
+      "delay_sec": -37
     }
   ]
 }
