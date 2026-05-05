@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T09:05:36.817733-04:00",
+  "generated_at": "2026-05-05T09:06:03.243769-04:00",
   "period": "morning",
   "today_bias_sec": -36,
   "n_trips": 13,
@@ -10,25 +10,12 @@
       "mmsi": "366851680",
       "destination": "NYC W39",
       "eta": "09:10 AM",
-      "eta_iso": "2026-05-05T09:10:10.282351-04:00",
-      "eta_ts": 1777986610,
+      "eta_iso": "2026-05-05T09:10:42.191325-04:00",
+      "eta_ts": 1777986642,
       "conf_pm_min": 1.5,
-      "remaining_min": 4.6,
-      "dist_nm": 2.07,
-      "sog": 23.2,
-      "delay_sec": -36
-    },
-    {
-      "vessel": "FRED V MORRONE",
-      "mmsi": "366853410",
-      "destination": "NYC W39",
-      "eta": "09:10 AM",
-      "eta_iso": "2026-05-05T09:10:24.195486-04:00",
-      "eta_ts": 1777986624,
-      "conf_pm_min": 1.4,
-      "remaining_min": 4.8,
-      "dist_nm": 3.1,
-      "sog": 19.0,
+      "remaining_min": 4.7,
+      "dist_nm": 1.92,
+      "sog": 24.4,
       "delay_sec": -36
     },
     {
@@ -36,12 +23,25 @@
       "mmsi": "366629680",
       "destination": "NYC W39",
       "eta": "09:12 AM",
-      "eta_iso": "2026-05-05T09:12:17.263056-04:00",
-      "eta_ts": 1777986737,
+      "eta_iso": "2026-05-05T09:12:43.702232-04:00",
+      "eta_ts": 1777986764,
       "conf_pm_min": 1.9,
       "remaining_min": 6.7,
-      "dist_nm": 1.91,
-      "sog": 13.2,
+      "dist_nm": 1.81,
+      "sog": 13.8,
+      "delay_sec": -36
+    },
+    {
+      "vessel": "FRED V MORRONE",
+      "mmsi": "366853410",
+      "destination": "NYC W39",
+      "eta": "09:12 AM",
+      "eta_iso": "2026-05-05T09:12:57.593265-04:00",
+      "eta_ts": 1777986778,
+      "conf_pm_min": 1.9,
+      "remaining_min": 6.9,
+      "dist_nm": 3.02,
+      "sog": 10.2,
       "delay_sec": -36
     }
   ]
