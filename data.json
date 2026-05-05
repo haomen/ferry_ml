@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T08:35:37.525848-04:00",
+  "generated_at": "2026-05-05T08:36:03.998531-04:00",
   "period": "morning",
   "today_bias_sec": -37,
   "n_trips": 13,
@@ -10,12 +10,12 @@
       "mmsi": "366902350",
       "destination": "NYC W39",
       "eta": "08:40 AM",
-      "eta_iso": "2026-05-05T08:40:17.156147-04:00",
-      "eta_ts": 1777984817,
+      "eta_iso": "2026-05-05T08:40:43.630678-04:00",
+      "eta_ts": 1777984844,
       "conf_pm_min": 1.6,
       "remaining_min": 4.7,
-      "dist_nm": 2.6,
-      "sog": 24.5,
+      "dist_nm": 2.87,
+      "sog": 24.7,
       "delay_sec": -37
     },
     {
@@ -23,12 +23,12 @@
       "mmsi": "367434220",
       "destination": "NYC W39",
       "eta": "08:41 AM",
-      "eta_iso": "2026-05-05T08:41:05.595259-04:00",
-      "eta_ts": 1777984866,
+      "eta_iso": "2026-05-05T08:41:32.742154-04:00",
+      "eta_ts": 1777984893,
       "conf_pm_min": 0.0,
       "remaining_min": 5.5,
-      "dist_nm": 1.09,
-      "sog": 17.4,
+      "dist_nm": 1.23,
+      "sog": 17.7,
       "delay_sec": -37
     },
     {
@@ -36,12 +36,12 @@
       "mmsi": "366629680",
       "destination": "NYC W39",
       "eta": "08:42 AM",
-      "eta_iso": "2026-05-05T08:42:30.264815-04:00",
-      "eta_ts": 1777984950,
+      "eta_iso": "2026-05-05T08:42:56.697832-04:00",
+      "eta_ts": 1777984977,
       "conf_pm_min": 1.9,
       "remaining_min": 6.9,
-      "dist_nm": 2.82,
-      "sog": 0.1,
+      "dist_nm": 2.83,
+      "sog": 5.3,
       "delay_sec": -37
     },
     {
@@ -49,12 +49,12 @@
       "mmsi": "366851680",
       "destination": "NYC W39",
       "eta": "08:42 AM",
-      "eta_iso": "2026-05-05T08:42:30.315190-04:00",
-      "eta_ts": 1777984950,
+      "eta_iso": "2026-05-05T08:42:56.741802-04:00",
+      "eta_ts": 1777984977,
       "conf_pm_min": 1.9,
       "remaining_min": 6.9,
-      "dist_nm": 2.75,
-      "sog": 6.6,
+      "dist_nm": 2.78,
+      "sog": 1.0,
       "delay_sec": -37
     },
     {
@@ -62,12 +62,12 @@
       "mmsi": "366853410",
       "destination": "NYC W39",
       "eta": "08:42 AM",
-      "eta_iso": "2026-05-05T08:42:30.368912-04:00",
-      "eta_ts": 1777984950,
+      "eta_iso": "2026-05-05T08:42:56.829465-04:00",
+      "eta_ts": 1777984977,
       "conf_pm_min": 1.9,
       "remaining_min": 6.9,
       "dist_nm": 3.08,
-      "sog": 1.1,
+      "sog": 0.4,
       "delay_sec": -37
     }
   ]
