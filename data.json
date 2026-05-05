@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T18:50:03.812893-04:00",
+  "generated_at": "2026-05-05T18:50:37.817670-04:00",
   "period": "afternoon",
   "today_bias_sec": -101,
   "n_trips": 13,
@@ -10,8 +10,8 @@
       "mmsi": "367434220",
       "destination": "Hoboken 14 St",
       "eta": "06:54 PM",
-      "eta_iso": "2026-05-05T18:54:13.207995-04:00",
-      "eta_ts": 1778021653,
+      "eta_iso": "2026-05-05T18:54:47.212779-04:00",
+      "eta_ts": 1778021687,
       "conf_pm_min": 1.7,
       "remaining_min": 4.2,
       "dist_nm": 1.85,
@@ -22,13 +22,13 @@
       "vessel": "FRED V MORRONE",
       "mmsi": "366853410",
       "destination": "Hoboken 14 St",
-      "eta": "06:56 PM",
-      "eta_iso": "2026-05-05T18:56:38.575800-04:00",
-      "eta_ts": 1778021799,
+      "eta": "06:57 PM",
+      "eta_iso": "2026-05-05T18:57:12.588102-04:00",
+      "eta_ts": 1778021833,
       "conf_pm_min": 1.6,
       "remaining_min": 6.6,
       "dist_nm": 1.32,
-      "sog": 0.2,
+      "sog": 0.0,
       "delay_sec": -101
     }
   ]
