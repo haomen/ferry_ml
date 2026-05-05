@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T09:16:04.254625-04:00",
+  "generated_at": "2026-05-05T09:16:37.833309-04:00",
   "period": "morning",
   "today_bias_sec": -36,
   "n_trips": 13,
@@ -9,9 +9,9 @@
       "vessel": "FRED V MORRONE",
       "mmsi": "366853410",
       "destination": "NYC W39",
-      "eta": "09:20 AM",
-      "eta_iso": "2026-05-05T09:20:45.152478-04:00",
-      "eta_ts": 1777987245,
+      "eta": "09:21 AM",
+      "eta_iso": "2026-05-05T09:21:18.728522-04:00",
+      "eta_ts": 1777987279,
       "conf_pm_min": 1.6,
       "remaining_min": 4.7,
       "dist_nm": 3.8,
@@ -19,12 +19,25 @@
       "delay_sec": -36
     },
     {
+      "vessel": "YOGI BERRA",
+      "mmsi": "367434220",
+      "destination": "NYC W39",
+      "eta": "09:22 AM",
+      "eta_iso": "2026-05-05T09:22:10.416263-04:00",
+      "eta_ts": 1777987330,
+      "conf_pm_min": 0.0,
+      "remaining_min": 5.5,
+      "dist_nm": 1.22,
+      "sog": 15.8,
+      "delay_sec": -36
+    },
+    {
       "vessel": "GOV THOMAS H KEAN",
       "mmsi": "366902350",
       "destination": "NYC W39",
       "eta": "09:22 AM",
-      "eta_iso": "2026-05-05T09:22:00.886894-04:00",
-      "eta_ts": 1777987321,
+      "eta_iso": "2026-05-05T09:22:34.458310-04:00",
+      "eta_ts": 1777987354,
       "conf_pm_min": 1.0,
       "remaining_min": 5.9,
       "dist_nm": 2.86,
@@ -32,29 +45,16 @@
       "delay_sec": -36
     },
     {
-      "vessel": "YOGI BERRA",
-      "mmsi": "367434220",
-      "destination": "NYC W39",
-      "eta": "09:22 AM",
-      "eta_iso": "2026-05-05T09:22:24.152925-04:00",
-      "eta_ts": 1777987344,
-      "conf_pm_min": 0.2,
-      "remaining_min": 6.3,
-      "dist_nm": 1.08,
-      "sog": 15.1,
-      "delay_sec": -36
-    },
-    {
       "vessel": "SEN FRANK LAUTENBERG",
       "mmsi": "366851680",
       "destination": "NYC W39",
-      "eta": "09:22 AM",
-      "eta_iso": "2026-05-05T09:22:58.467728-04:00",
-      "eta_ts": 1777987378,
+      "eta": "09:23 AM",
+      "eta_iso": "2026-05-05T09:23:32.032480-04:00",
+      "eta_ts": 1777987412,
       "conf_pm_min": 1.9,
       "remaining_min": 6.9,
-      "dist_nm": 2.82,
-      "sog": 0.2,
+      "dist_nm": 2.8,
+      "sog": 0.1,
       "delay_sec": -36
     }
   ]
