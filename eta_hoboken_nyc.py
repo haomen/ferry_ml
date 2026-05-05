@@ -37,8 +37,7 @@ from terminals import (
 DB_DSN      = "host=localhost port=5432 dbname=aisdb user=ais password=aispass"
 REPO_DIR    = Path(__file__).parent
 MODEL_PATH  = REPO_DIR / "model" / "eta_model.pkl"
-DOCS_DIR    = REPO_DIR / "docs"
-DATA_JSON   = DOCS_DIR / "data.json"
+DATA_JSON   = REPO_DIR / "data.json"
 
 MORNING_HOURS   = range(7, 11)    # 7–10 AM  → Hoboken → NYC
 AFTERNOON_HOURS = range(16, 20)   # 4–7 PM   → NYC → Hoboken
@@ -578,7 +577,6 @@ def publish():
         "ferries":        results,
     }
 
-    DOCS_DIR.mkdir(exist_ok=True)
     DATA_JSON.write_text(json.dumps(payload, indent=2))
     log.info("Wrote %s (%d ferries)", DATA_JSON, len(results))
 
@@ -587,7 +585,7 @@ def publish():
 
 def _git_push():
     git = ["git", "-C", str(REPO_DIR)]
-    subprocess.run([*git, "add", str(DATA_JSON)], check=True)
+    subprocess.run([*git, "add", "data.json", "index.html"], check=True)
     status = subprocess.run(
         [*git, "status", "--porcelain"],
         capture_output=True, text=True, check=True,
