@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T18:37:37.912115-04:00",
+  "generated_at": "2026-05-05T18:38:03.958910-04:00",
   "period": "afternoon",
   "today_bias_sec": -101,
   "n_trips": 13,
@@ -10,12 +10,12 @@
       "mmsi": "366851680",
       "destination": "Hoboken 14 St",
       "eta": "06:40 PM",
-      "eta_iso": "2026-05-05T18:40:03.433531-04:00",
-      "eta_ts": 1778020803,
+      "eta_iso": "2026-05-05T18:40:36.182045-04:00",
+      "eta_ts": 1778020836,
       "conf_pm_min": 1.1,
-      "remaining_min": 2.4,
-      "dist_nm": 0.59,
-      "sog": 18.8,
+      "remaining_min": 2.5,
+      "dist_nm": 0.69,
+      "sog": 18.5,
       "delay_sec": -101
     },
     {
@@ -23,8 +23,8 @@
       "mmsi": "367434220",
       "destination": "Hoboken 14 St",
       "eta": "06:41 PM",
-      "eta_iso": "2026-05-05T18:41:21.964070-04:00",
-      "eta_ts": 1778020882,
+      "eta_iso": "2026-05-05T18:41:48.010848-04:00",
+      "eta_ts": 1778020908,
       "conf_pm_min": 0.9,
       "remaining_min": 3.7,
       "dist_nm": 1.08,
@@ -32,16 +32,16 @@
       "delay_sec": -101
     },
     {
-      "vessel": "FRED V MORRONE",
-      "mmsi": "366853410",
+      "vessel": "GOV THOMAS H KEAN",
+      "mmsi": "366902350",
       "destination": "Hoboken 14 St",
       "eta": "06:43 PM",
-      "eta_iso": "2026-05-05T18:43:43.540268-04:00",
-      "eta_ts": 1778021024,
-      "conf_pm_min": 0.4,
-      "remaining_min": 6.1,
-      "dist_nm": 1.27,
-      "sog": 15.5,
+      "eta_iso": "2026-05-05T18:43:28.232307-04:00",
+      "eta_ts": 1778021008,
+      "conf_pm_min": 1.2,
+      "remaining_min": 5.4,
+      "dist_nm": 4.74,
+      "sog": 18.0,
       "delay_sec": -101
     },
     {
@@ -49,12 +49,25 @@
       "mmsi": "366629680",
       "destination": "Hoboken 14 St",
       "eta": "06:44 PM",
-      "eta_iso": "2026-05-05T18:44:12.369048-04:00",
-      "eta_ts": 1778021052,
+      "eta_iso": "2026-05-05T18:44:38.511038-04:00",
+      "eta_ts": 1778021079,
       "conf_pm_min": 2.1,
       "remaining_min": 6.6,
       "dist_nm": 2.58,
       "sog": 4.8,
+      "delay_sec": -101
+    },
+    {
+      "vessel": "FRED V MORRONE",
+      "mmsi": "366853410",
+      "destination": "Hoboken 14 St",
+      "eta": "06:44 PM",
+      "eta_iso": "2026-05-05T18:44:38.653394-04:00",
+      "eta_ts": 1778021079,
+      "conf_pm_min": 1.6,
+      "remaining_min": 6.6,
+      "dist_nm": 1.31,
+      "sog": 3.6,
       "delay_sec": -101
     }
   ]
