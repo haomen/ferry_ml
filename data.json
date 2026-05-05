@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T07:46:36.813968-04:00",
+  "generated_at": "2026-05-05T07:47:02.952204-04:00",
   "period": "morning",
   "today_bias_sec": -43,
   "n_trips": 13,
@@ -10,12 +10,12 @@
       "mmsi": "366853410",
       "destination": "NYC W39",
       "eta": "07:51 AM",
-      "eta_iso": "2026-05-05T07:51:10.415673-04:00",
-      "eta_ts": 1777981870,
+      "eta_iso": "2026-05-05T07:51:36.553896-04:00",
+      "eta_ts": 1777981897,
       "conf_pm_min": 1.6,
       "remaining_min": 4.6,
-      "dist_nm": 3.76,
-      "sog": 26.1,
+      "dist_nm": 3.75,
+      "sog": 25.0,
       "delay_sec": -43
     },
     {
@@ -23,12 +23,12 @@
       "mmsi": "366629680",
       "destination": "NYC W39",
       "eta": "07:53 AM",
-      "eta_iso": "2026-05-05T07:53:23.630115-04:00",
-      "eta_ts": 1777982004,
+      "eta_iso": "2026-05-05T07:53:49.765702-04:00",
+      "eta_ts": 1777982030,
       "conf_pm_min": 1.9,
       "remaining_min": 6.8,
-      "dist_nm": 2.49,
-      "sog": 2.6,
+      "dist_nm": 2.51,
+      "sog": 1.9,
       "delay_sec": -43
     }
   ]
