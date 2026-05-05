@@ -1,34 +1,21 @@
 {
-  "generated_at": "2026-05-05T09:47:03.557259-04:00",
+  "generated_at": "2026-05-05T09:47:37.043442-04:00",
   "period": "morning",
   "today_bias_sec": -45,
   "n_trips": 13,
   "trained_at": "2026-05-05T10:00:09.130869+00:00",
   "ferries": [
     {
-      "vessel": "GARDEN STATE",
-      "mmsi": "366629680",
-      "destination": "NYC W39",
-      "eta": "09:48 AM",
-      "eta_iso": "2026-05-05T09:48:59.595210-04:00",
-      "eta_ts": 1777988940,
-      "conf_pm_min": 1.7,
-      "remaining_min": 1.9,
-      "dist_nm": 0.06,
-      "sog": 6.8,
-      "delay_sec": -45
-    },
-    {
       "vessel": "YOGI BERRA",
       "mmsi": "367434220",
       "destination": "NYC W39",
       "eta": "09:49 AM",
-      "eta_iso": "2026-05-05T09:49:03.001935-04:00",
-      "eta_ts": 1777988943,
+      "eta_iso": "2026-05-05T09:49:36.488113-04:00",
+      "eta_ts": 1777988976,
       "conf_pm_min": 1.7,
       "remaining_min": 2.0,
-      "dist_nm": 0.01,
-      "sog": 4.3,
+      "dist_nm": 0.05,
+      "sog": 8.2,
       "delay_sec": -45
     },
     {
@@ -36,12 +23,12 @@
       "mmsi": "366853410",
       "destination": "NYC W39",
       "eta": "09:51 AM",
-      "eta_iso": "2026-05-05T09:51:22.615967-04:00",
-      "eta_ts": 1777989083,
+      "eta_iso": "2026-05-05T09:51:56.155791-04:00",
+      "eta_ts": 1777989116,
       "conf_pm_min": 1.7,
       "remaining_min": 4.3,
-      "dist_nm": 2.98,
-      "sog": 26.0,
+      "dist_nm": 2.77,
+      "sog": 25.8,
       "delay_sec": -45
     }
   ]
