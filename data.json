@@ -1,61 +1,61 @@
 {
-  "generated_at": "2026-05-05T16:59:37.961498-04:00",
+  "generated_at": "2026-05-05T17:00:03.765028-04:00",
   "period": "afternoon",
-  "today_bias_sec": -112,
+  "today_bias_sec": -109,
   "n_trips": 13,
   "trained_at": "2026-05-05T10:00:09.130869+00:00",
   "ferries": [
+    {
+      "vessel": "GOV THOMAS H KEAN",
+      "mmsi": "366902350",
+      "destination": "Hoboken 14 St",
+      "eta": "05:03 PM",
+      "eta_iso": "2026-05-05T17:03:39.379102-04:00",
+      "eta_ts": 1778015019,
+      "conf_pm_min": 1.6,
+      "remaining_min": 3.6,
+      "dist_nm": 2.59,
+      "sog": 23.0,
+      "delay_sec": -109
+    },
     {
       "vessel": "FRED V MORRONE",
       "mmsi": "366853410",
       "destination": "Hoboken 14 St",
       "eta": "05:03 PM",
-      "eta_iso": "2026-05-05T17:03:13.242893-04:00",
-      "eta_ts": 1778014993,
+      "eta_iso": "2026-05-05T17:03:41.926915-04:00",
+      "eta_ts": 1778015022,
       "conf_pm_min": 2.0,
       "remaining_min": 3.6,
       "dist_nm": 2.32,
       "sog": 25.7,
-      "delay_sec": -112
+      "delay_sec": -109
     },
     {
       "vessel": "YOGI BERRA",
       "mmsi": "367434220",
       "destination": "Hoboken 14 St",
       "eta": "05:03 PM",
-      "eta_iso": "2026-05-05T17:03:13.335970-04:00",
-      "eta_ts": 1778014993,
+      "eta_iso": "2026-05-05T17:03:42.023569-04:00",
+      "eta_ts": 1778015022,
       "conf_pm_min": 2.0,
       "remaining_min": 3.6,
       "dist_nm": 2.29,
       "sog": 102.3,
-      "delay_sec": -112
+      "delay_sec": -109
     },
     {
       "vessel": "GARDEN STATE",
       "mmsi": "366629680",
       "destination": "Hoboken 14 St",
-      "eta": "05:05 PM",
-      "eta_iso": "2026-05-05T17:05:39.834203-04:00",
-      "eta_ts": 1778015140,
-      "conf_pm_min": 2.3,
-      "remaining_min": 6.0,
+      "eta": "05:06 PM",
+      "eta_iso": "2026-05-05T17:06:07.885313-04:00",
+      "eta_ts": 1778015168,
+      "conf_pm_min": 1.9,
+      "remaining_min": 6.1,
       "dist_nm": 2.59,
       "sog": 0.1,
-      "delay_sec": -112
-    },
-    {
-      "vessel": "GOV THOMAS H KEAN",
-      "mmsi": "366902350",
-      "destination": "Hoboken 14 St",
-      "eta": "05:05 PM",
-      "eta_iso": "2026-05-05T17:05:39.926708-04:00",
-      "eta_ts": 1778015140,
-      "conf_pm_min": 2.3,
-      "remaining_min": 6.0,
-      "dist_nm": 2.57,
-      "sog": 2.5,
-      "delay_sec": -112
+      "delay_sec": -109
     }
   ]
 }
