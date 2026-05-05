@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T07:22:36.932450-04:00",
+  "generated_at": "2026-05-05T07:23:03.157885-04:00",
   "period": "morning",
   "today_bias_sec": 0,
   "n_trips": 13,
@@ -10,8 +10,8 @@
       "mmsi": "366629680",
       "destination": "NYC W39",
       "eta": "07:26 AM",
-      "eta_iso": "2026-05-05T07:26:31.765142-04:00",
-      "eta_ts": 1777980392,
+      "eta_iso": "2026-05-05T07:26:58.008330-04:00",
+      "eta_ts": 1777980418,
       "conf_pm_min": 1.6,
       "remaining_min": 3.9,
       "dist_nm": 0.73,
@@ -19,16 +19,16 @@
       "delay_sec": 0
     },
     {
-      "vessel": "FRED V MORRONE",
-      "mmsi": "366853410",
+      "vessel": "SEN FRANK LAUTENBERG",
+      "mmsi": "366851680",
       "destination": "NYC W39",
-      "eta": "07:27 AM",
-      "eta_iso": "2026-05-05T07:27:51.709038-04:00",
-      "eta_ts": 1777980472,
-      "conf_pm_min": 1.6,
-      "remaining_min": 5.2,
-      "dist_nm": 3.01,
-      "sog": 21.7,
+      "eta": "07:30 AM",
+      "eta_iso": "2026-05-05T07:30:25.890018-04:00",
+      "eta_ts": 1777980626,
+      "conf_pm_min": 1.9,
+      "remaining_min": 7.4,
+      "dist_nm": 2.63,
+      "sog": 12.2,
       "delay_sec": 0
     },
     {
@@ -36,8 +36,8 @@
       "mmsi": "366902350",
       "destination": "NYC W39",
       "eta": "07:30 AM",
-      "eta_iso": "2026-05-05T07:30:00.117071-04:00",
-      "eta_ts": 1777980600,
+      "eta_iso": "2026-05-05T07:30:26.365216-04:00",
+      "eta_ts": 1777980626,
       "conf_pm_min": 1.1,
       "remaining_min": 7.4,
       "dist_nm": 3.93,
@@ -45,16 +45,16 @@
       "delay_sec": 0
     },
     {
-      "vessel": "SEN FRANK LAUTENBERG",
-      "mmsi": "366851680",
+      "vessel": "FRED V MORRONE",
+      "mmsi": "366853410",
       "destination": "NYC W39",
       "eta": "07:30 AM",
-      "eta_iso": "2026-05-05T07:30:06.714242-04:00",
-      "eta_ts": 1777980607,
+      "eta_iso": "2026-05-05T07:30:33.002989-04:00",
+      "eta_ts": 1777980633,
       "conf_pm_min": 1.9,
       "remaining_min": 7.5,
-      "dist_nm": 2.72,
-      "sog": 12.6,
+      "dist_nm": 3.02,
+      "sog": 14.2,
       "delay_sec": 0
     },
     {
@@ -62,12 +62,12 @@
       "mmsi": "367434220",
       "destination": "NYC W39",
       "eta": "07:30 AM",
-      "eta_iso": "2026-05-05T07:30:06.871132-04:00",
-      "eta_ts": 1777980607,
+      "eta_iso": "2026-05-05T07:30:33.096586-04:00",
+      "eta_ts": 1777980633,
       "conf_pm_min": 1.9,
       "remaining_min": 7.5,
       "dist_nm": 3.08,
-      "sog": 1.7,
+      "sog": 0.3,
       "delay_sec": 0
     }
   ]
