@@ -23,14 +23,11 @@ from datetime import datetime, timezone, timedelta
 
 import pandas as pd
 import psycopg2
-import shutil
-import subprocess
-from huggingface_hub import HfFolder
+from huggingface_hub import HfApi, get_token
 
 # ── Config ────────────────────────────────────────────────────────────────────
-HF_REPO   = "menhao/ais-hudson-river"   # <-- set this
-HF_TOKEN  = os.environ.get("HF_TOKEN") or HfFolder.get_token()
-HF_CLONE  = os.path.expanduser("~/ais-data/hf-repo")
+HF_REPO   = "menhao/ais-hudson-river"
+HF_TOKEN  = os.environ.get("HF_TOKEN") or get_token()
 
 DB_DSN    = "host=localhost port=5432 dbname=aisdb user=ais password=aispass"
 LOCAL_DIR = os.path.expanduser("~/ais-data/exports")
@@ -102,48 +99,21 @@ def export_day(date_str: str) -> str:
     return out_path
 
 
-# ── Upload via git ────────────────────────────────────────────────────────────
-def run(cmd, **kwargs):
-    log.info(f"  $ {' '.join(cmd)}")
-    subprocess.run(cmd, check=True, **kwargs)
-
-
+# ── Upload via HF API ─────────────────────────────────────────────────────────
 def upload_to_hf(local_path: str, date_str: str):
     if not HF_TOKEN:
         raise RuntimeError("No HuggingFace token — run: huggingface-cli login")
 
-    repo_url = f"https://user:{HF_TOKEN}@huggingface.co/datasets/{HF_REPO}"
-
-    # Clone once, reuse on subsequent runs
-    if not os.path.exists(os.path.join(HF_CLONE, ".git")):
-        log.info(f"Cloning {HF_REPO} to {HF_CLONE}")
-        run(["git", "clone", repo_url, HF_CLONE])
-        run(["git", "-C", HF_CLONE, "config", "user.email", "ais-collector@local"])
-        run(["git", "-C", HF_CLONE, "config", "user.name", "AIS Collector"])
-    else:
-        run(["git", "-C", HF_CLONE, "pull"])
-
-    # Copy CSV into the repo
-    data_dir = os.path.join(HF_CLONE, "data")
-    os.makedirs(data_dir, exist_ok=True)
-    dest = os.path.join(data_dir, f"{date_str}.csv")
-    shutil.copy2(local_path, dest)
-    log.info(f"  Copied to {dest}")
-
-    # Stage the file, then check if there's anything new to commit
-    run(["git", "-C", HF_CLONE, "add", "-f", dest])
-
-    status = subprocess.run(
-        ["git", "-C", HF_CLONE, "status", "--porcelain"],
-        stdout=subprocess.PIPE, stderr=subprocess.PIPE
-    ).stdout.decode().strip()
-
-    if not status:
-        log.info("No changes — file already uploaded")
-        return
-
-    run(["git", "-C", HF_CLONE, "commit", "-m", f"AIS data {date_str}"])
-    run(["git", "-C", HF_CLONE, "push", repo_url, "main"])
+    api = HfApi(token=HF_TOKEN)
+    dest = f"data/{date_str}.csv"
+    log.info(f"Uploading {local_path} → {HF_REPO}/{dest}")
+    api.upload_file(
+        path_or_fileobj=local_path,
+        path_in_repo=dest,
+        repo_id=HF_REPO,
+        repo_type="dataset",
+        commit_message=f"AIS data {date_str}",
+    )
     log.info("Upload complete")
 
 
