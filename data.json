@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T08:05:37.546921-04:00",
+  "generated_at": "2026-05-05T08:06:04.156502-04:00",
   "period": "morning",
   "today_bias_sec": -43,
   "n_trips": 13,
@@ -10,8 +10,8 @@
       "mmsi": "366902350",
       "destination": "NYC W39",
       "eta": "08:10 AM",
-      "eta_iso": "2026-05-05T08:10:09.159688-04:00",
-      "eta_ts": 1777983009,
+      "eta_iso": "2026-05-05T08:10:35.775590-04:00",
+      "eta_ts": 1777983036,
       "conf_pm_min": 1.5,
       "remaining_min": 4.5,
       "dist_nm": 3.38,
@@ -19,29 +19,16 @@
       "delay_sec": -43
     },
     {
-      "vessel": "YOGI BERRA",
-      "mmsi": "367434220",
-      "destination": "NYC W39",
-      "eta": "08:12 AM",
-      "eta_iso": "2026-05-05T08:12:10.657398-04:00",
-      "eta_ts": 1777983131,
-      "conf_pm_min": 1.9,
-      "remaining_min": 6.6,
-      "dist_nm": 3.07,
-      "sog": 4.3,
-      "delay_sec": -43
-    },
-    {
       "vessel": "GARDEN STATE",
       "mmsi": "366629680",
       "destination": "NYC W39",
       "eta": "08:12 AM",
-      "eta_iso": "2026-05-05T08:12:24.135544-04:00",
-      "eta_ts": 1777983144,
+      "eta_iso": "2026-05-05T08:12:50.743066-04:00",
+      "eta_ts": 1777983171,
       "conf_pm_min": 1.9,
       "remaining_min": 6.8,
-      "dist_nm": 2.83,
-      "sog": 6.0,
+      "dist_nm": 2.84,
+      "sog": 9.1,
       "delay_sec": -43
     },
     {
@@ -49,12 +36,12 @@
       "mmsi": "366851680",
       "destination": "NYC W39",
       "eta": "08:12 AM",
-      "eta_iso": "2026-05-05T08:12:24.197764-04:00",
-      "eta_ts": 1777983144,
+      "eta_iso": "2026-05-05T08:12:50.792629-04:00",
+      "eta_ts": 1777983171,
       "conf_pm_min": 1.9,
       "remaining_min": 6.8,
-      "dist_nm": 1.83,
-      "sog": 7.2,
+      "dist_nm": 1.82,
+      "sog": 5.6,
       "delay_sec": -43
     },
     {
@@ -62,12 +49,25 @@
       "mmsi": "366853410",
       "destination": "NYC W39",
       "eta": "08:12 AM",
-      "eta_iso": "2026-05-05T08:12:24.278139-04:00",
-      "eta_ts": 1777983144,
+      "eta_iso": "2026-05-05T08:12:50.835855-04:00",
+      "eta_ts": 1777983171,
+      "conf_pm_min": 1.9,
+      "remaining_min": 6.8,
+      "dist_nm": 3.08,
+      "sog": 0.6,
+      "delay_sec": -43
+    },
+    {
+      "vessel": "YOGI BERRA",
+      "mmsi": "367434220",
+      "destination": "NYC W39",
+      "eta": "08:12 AM",
+      "eta_iso": "2026-05-05T08:12:51.019613-04:00",
+      "eta_ts": 1777983171,
       "conf_pm_min": 1.9,
       "remaining_min": 6.8,
       "dist_nm": 3.06,
-      "sog": 3.2,
+      "sog": 7.3,
       "delay_sec": -43
     }
   ]
