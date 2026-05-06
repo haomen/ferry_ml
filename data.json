@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-06T07:05:03.565653-04:00",
+  "generated_at": "2026-05-06T07:05:37.317730-04:00",
   "period": "morning",
   "today_bias_sec": 179,
   "n_trips": 20,
@@ -9,13 +9,13 @@
       "vessel": "SEN FRANK LAUTENBERG",
       "mmsi": "366851680",
       "destination": "NYC W39",
-      "eta": "07:09 AM",
-      "eta_iso": "2026-05-06T07:09:46.333540-04:00",
-      "eta_ts": 1778065786,
-      "conf_pm_min": 1.0,
-      "remaining_min": 4.7,
-      "dist_nm": 0.33,
-      "sog": 23.1,
+      "eta": "07:10 AM",
+      "eta_iso": "2026-05-06T07:10:48.260817-04:00",
+      "eta_ts": 1778065848,
+      "conf_pm_min": 0.8,
+      "remaining_min": 5.2,
+      "dist_nm": 0.4,
+      "sog": 22.8,
       "delay_sec": 179
     }
   ]
