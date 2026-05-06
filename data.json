@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-05-05T19:59:37.570755-04:00",
-  "period": "afternoon",
-  "today_bias_sec": -128,
-  "n_trips": 13,
-  "trained_at": "2026-05-05T10:00:09.130869+00:00",
+  "generated_at": "2026-05-06T07:00:03.478955-04:00",
+  "period": "morning",
+  "today_bias_sec": 179,
+  "n_trips": 20,
+  "trained_at": "2026-05-06T10:00:14.112058+00:00",
   "ferries": []
 }
