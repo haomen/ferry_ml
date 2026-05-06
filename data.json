@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-06T07:04:37.348295-04:00",
+  "generated_at": "2026-05-06T07:05:03.565653-04:00",
   "period": "morning",
   "today_bias_sec": 179,
   "n_trips": 20,
@@ -10,12 +10,12 @@
       "mmsi": "366851680",
       "destination": "NYC W39",
       "eta": "07:09 AM",
-      "eta_iso": "2026-05-06T07:09:20.100771-04:00",
-      "eta_ts": 1778065760,
+      "eta_iso": "2026-05-06T07:09:46.333540-04:00",
+      "eta_ts": 1778065786,
       "conf_pm_min": 1.0,
       "remaining_min": 4.7,
       "dist_nm": 0.33,
-      "sog": 23.3,
+      "sog": 23.1,
       "delay_sec": 179
     }
   ]
