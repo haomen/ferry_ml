@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-06T07:08:37.264039-04:00",
+  "generated_at": "2026-05-06T07:09:03.995907-04:00",
   "period": "morning",
   "today_bias_sec": 179,
   "n_trips": 20,
@@ -9,26 +9,26 @@
       "vessel": "GOV THOMAS H KEAN",
       "mmsi": "366902350",
       "destination": "NYC W39",
-      "eta": "07:14 AM",
-      "eta_iso": "2026-05-06T07:14:54.531071-04:00",
-      "eta_ts": 1778066095,
+      "eta": "07:15 AM",
+      "eta_iso": "2026-05-06T07:15:20.818194-04:00",
+      "eta_ts": 1778066121,
       "conf_pm_min": 0.5,
       "remaining_min": 6.3,
-      "dist_nm": 0.62,
-      "sog": 20.0,
+      "dist_nm": 0.67,
+      "sog": 21.0,
       "delay_sec": 179
     },
     {
       "vessel": "SEN FRANK LAUTENBERG",
       "mmsi": "366851680",
       "destination": "NYC W39",
-      "eta": "07:16 AM",
-      "eta_iso": "2026-05-06T07:16:54.831755-04:00",
-      "eta_ts": 1778066215,
+      "eta": "07:17 AM",
+      "eta_iso": "2026-05-06T07:17:21.560861-04:00",
+      "eta_ts": 1778066242,
       "conf_pm_min": 0.6,
       "remaining_min": 8.3,
       "dist_nm": 0.98,
-      "sog": 2.1,
+      "sog": 0.4,
       "delay_sec": 179
     }
   ]
