@@ -1,47 +1,21 @@
 {
-  "generated_at": "2026-05-06T07:03:03.391242-04:00",
+  "generated_at": "2026-05-06T07:03:36.778078-04:00",
   "period": "morning",
   "today_bias_sec": 179,
   "n_trips": 20,
   "trained_at": "2026-05-06T10:00:14.112058+00:00",
   "ferries": [
     {
-      "vessel": "GOV THOMAS H KEAN",
-      "mmsi": "366902350",
-      "destination": "NYC W39",
-      "eta": "07:07 AM",
-      "eta_iso": "2026-05-06T07:07:39.023378-04:00",
-      "eta_ts": 1778065659,
-      "conf_pm_min": 1.6,
-      "remaining_min": 4.6,
-      "dist_nm": 0.04,
-      "sog": 5.6,
-      "delay_sec": 179
-    },
-    {
       "vessel": "SEN FRANK LAUTENBERG",
       "mmsi": "366851680",
       "destination": "NYC W39",
-      "eta": "07:09 AM",
-      "eta_iso": "2026-05-06T07:09:45.704317-04:00",
-      "eta_ts": 1778065786,
-      "conf_pm_min": 0.7,
+      "eta": "07:10 AM",
+      "eta_iso": "2026-05-06T07:10:18.449421-04:00",
+      "eta_ts": 1778065818,
+      "conf_pm_min": 0.8,
       "remaining_min": 6.7,
-      "dist_nm": 0.64,
-      "sog": 10.9,
-      "delay_sec": 179
-    },
-    {
-      "vessel": "GARDEN STATE",
-      "mmsi": "366629680",
-      "destination": "NYC W39",
-      "eta": "07:15 AM",
-      "eta_iso": "2026-05-06T07:15:42.411094-04:00",
-      "eta_ts": 1778066142,
-      "conf_pm_min": 4.7,
-      "remaining_min": 12.7,
-      "dist_nm": 1.81,
-      "sog": 7.2,
+      "dist_nm": 0.56,
+      "sog": 12.2,
       "delay_sec": 179
     }
   ]
